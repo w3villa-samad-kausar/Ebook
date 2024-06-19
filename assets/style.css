@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+
+
+/* Navbar*/
+header{
+  background-color: rgb(44, 39, 39);
+}
+.wrapper{
+  max-width: 1140px;
+  margin: auto;
+}
+.topHeader{
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-weight: 700;
+  font-size: 16px;
+}
+.otherHeaderElements{
+  display: flex;
+  gap: 50px;
+  
+}
+.topHeaderText{
+  font-weight: 300;
+}
+.topHeaderButton button{
+  background-color: rgb(255, 217, 0);
+  width: 150px;
+  border-radius: 3px;
+  border: none;
+  color: rgb(44, 39, 39);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.topHeaderButton button:hover{
+  background-color: white;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+
+.heroSection{
+  position: relative;
+  width: 100%;
+  height: 550px;
+  
+  }
+
+  .heroSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('book-shelves-david-madison.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.heroSection::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    z-index: -1;
+}
+
+  .heroSectionContent{
+  height: 550px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  color: white;
+  }
+  .heroSectionText{
+    margin-top: 100px;
+    width: 50%;
+  }
+  .heroHeading{
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+  .heroText{
+    font-size: 20px;
+    width: 40%;
+    padding-bottom: 50px;
+  }
+  .learn{
+    border: 2px solid grey;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    margin-right: 50px;
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .learn:hover{
+    background-color: white;
+    transform: scale(1.05);
+    color: black;
+  }
+  
+  .heroButtons .buy{
+    background-color: rgb(255, 217, 0);
+    width: 120px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    color: rgb(44, 39, 39);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .buy:hover{
+    background-color: white;
+    transform: scale(1.05);
+  }
+  .heroSectionImage{
+    width: 50%;
+    margin-top: 50px;
+  }
+  .heroSectionImage img{
+    height: 550px;
+    width: auto;
+  }
+  
+  /* Features section */
+  .featuresSection{
+    margin-top: 100px;
+    text-align: center;
+    height: 400px;
+  }
+  .featureHeading {
+    font-size: 36px; 
+    font-weight: 500;
+    margin-bottom: 20px; 
+    color: rgb(83, 77, 77);
+}
+
+  .icon-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .icon-item:hover{
+    background-color: white;
+    transform: scale(1.05);
+  }
+
+.icon-circle {
+    width: 80px; 
+    height: 80px; 
+    border: 2px solid rgb(83, 77, 77); /* Border around the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 40px; 
+    color: rgb(83, 77, 77);
+   
+  }
+
+.icon-text {
+    font-size: 14px;
+    margin-top: 10px;  
+    color: rgb(83, 77, 77);
+}
+
+/* Testimonial section */
+.testimonialsSection {
+  height: 450px;
+  background-color: rgb(64 63 44);
+  text-align: center;
+}
+.testimonialHeading{
+  padding-top: 50px;
+  font-size: 36px;
+  color: rgb(253, 248, 248);
+  font-weight: 500;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly; 
+  padding: 30px;
+}
+
+.review {
+  text-align: center; 
+  max-width: 30%;
+  background-color: rgb(233, 219, 16);
+  height: 250px;
+  border-radius: 5px;
+}
+
+.review-icon-container {
+  font-size: 36px; 
+}
+
+.review-text {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px; 
+  margin-top: 10px;
+}
+
+/* author's note */
+.author-note{
+  height: 400px;
+  text-align: center;
+
+}
+.author-note-heading{
+  padding-top: 50px;
+  font-size: 36px;
+  color: rgb(83, 77, 77); 
+  font-weight: 500;
+}
+.authorNoteContainer{
+  padding-left: 100px;
+  display: flex;
+}
+.author-image{
+  width: 30%;
+  margin-top: 100px;
+}
+.author-image img{
+  height: 300px;
+  width: auto;
+}
+.author-text{
+  width: 50%;
+  margin-top: 120px;
+}
