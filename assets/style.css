@@ -589,3 +589,25 @@ featuresSection {
   padding-top: 20px;
 }
 }
+
+@media(max-width:576px){
+  .wrapper {
+    width: 80%;
+}
+  .topHeader {
+    gap: 240px;
+}
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 330px;
+}
+.heroSectionText {
+  margin-top: 20px;
+  width: 50%;
+}
+.heroSectionImage img {
+  height: 300px;
+  width: auto;
+}
+}
